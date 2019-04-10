@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -23,15 +24,22 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     /** 设置界面 */
     func setupView(){
+        
+        self.title = NSLocalizedString("AM_Function_list", comment: "AM_Function_list")
+        
         listView.dataSource = self
         listView.delegate = self
-        listView.frame = self.view.bounds
         listView.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
         self.view.addSubview(listView)
+        
+        listView.snp.makeConstraints { (make) in
+            make.top.left.right.bottom.equalTo(self.view)
+        }
     }
     
     func setupData(){
         contents.append("ViewController")
+        contents.append("AMTabBarController")
     }
 
     /** UITableViewDataSource */

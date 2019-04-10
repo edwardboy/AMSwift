@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  AMSwift
+
+  Created by gyh on 2019/4/10.
+  Copyright © 2019 gyh. All rights reserved.
+*/
+
+"AM_Function_list"="Function List";
+
+/** Home **/
+"AM_Home_title"="Home";
