@@ -21,27 +21,33 @@ class AMTabBarController: UITabBarController {
     /** 设置子控制器 */
     func setupViewControllers(){
         
-        let home = addChild(AMHomeController(), title: AMLocalized(string: "AM_Home_title"), normalColor: UIColor.lightGray, selColor: UIColor.orange);
-        let home1 = addChild(AMHomeController(), title: AMLocalized(string: "AM_Home_title"), normalColor: UIColor.lightGray, selColor: UIColor.orange);
-        let home2 = addChild(AMHomeController(), title: AMLocalized(string: "AM_Home_title"), normalColor: UIColor.lightGray, selColor: UIColor.orange);
-        let home3 = addChild(AMHomeController(), title: AMLocalized(string: "AM_Home_title"), normalColor: UIColor.lightGray, selColor: UIColor.orange);
+        let norColor = UIColor.lightGray
+        let selColor = UIColor.orange
         
-        self.viewControllers = [home,home1,home2,home3]
+        let home = addChild(AMHomeController(), title: AMLocalized(string: "AM_Home_title"), normalColor: norColor , selColor: selColor);
+        let planting = addChild(AMPlantingController(), title: AMLocalized(string: "AM_Planting_title"), normalColor: norColor , selColor: selColor);
+        let beauty = addChild(AMBeautyController(), title: AMLocalized(string: "AM_Beauty_title"), normalColor: norColor , selColor: selColor);
+        let shop = addChild(AMShopController(), title: AMLocalized(string: "AM_Shop_title"), normalColor: norColor , selColor: selColor);
+        let profile = addChild(AMProfileController(), title: AMLocalized(string: "AM_Profile_title"), normalColor: norColor , selColor: selColor);
         
-//        print("self.selectedIndex:\(self.selectedIndex)")
+        self.viewControllers = [home,planting,beauty,shop,profile]
+        
+        print("self.selectedIndex:\(self.selectedIndex)")
     }
     
     
     func addChild(_ childController: UIViewController, title: String, normalColor:UIColor, selColor:UIColor) -> AMNavigationController{
         
         childController.tabBarItem.title = title
-        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.black], for: .normal)
-        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.orange], for: .selected)
-//        childController.navigationItem.title = title
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:normalColor], for: .normal)
+//        ,NSAttributedString.Key.font:UIFont.init(name: "PingFangSC-Medium", size: 14) as Any
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:selColor], for: .selected)
+//        ,NSAttributedString.Key.font:UIFont.init(name: "PingFangSC-Medium", size: 14) as Any
         childController.tabBarItem.image = UIImage.init(named: "");
         childController.tabBarItem.selectedImage = UIImage.init(named: "")
         
         let nav : AMNavigationController = AMNavigationController(rootViewController:childController)
+        
         return nav
     }
 

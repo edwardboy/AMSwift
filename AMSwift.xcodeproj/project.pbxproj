@@ -19,6 +19,10 @@
 		4A9DCEA6225DE61F008112CD /* AMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEA5225DE61F008112CD /* AMHomeController.swift */; };
 		4A9DCEA9225DF0D0008112CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A9DCEAB225DF0D0008112CD /* Localizable.strings */; };
 		4A9DCEAE225DF34D008112CD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEAD225DF34D008112CD /* Constant.swift */; };
+		4A9DCEB0225DF9E1008112CD /* AMProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEAF225DF9E1008112CD /* AMProfileController.swift */; };
+		4A9DCEB2225DF9F3008112CD /* AMPlantingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEB1225DF9F3008112CD /* AMPlantingController.swift */; };
+		4A9DCEB4225DFA03008112CD /* AMShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEB3225DFA03008112CD /* AMShopController.swift */; };
+		4A9DCEB6225DFA14008112CD /* AMBeautyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCEB5225DFA14008112CD /* AMBeautyController.swift */; };
 		900EE8F664AC99262B50B502 /* Pods_AMSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00C1C28BA18C1F307AB3CD5 /* Pods_AMSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		4A9DCEAA225DF0D0008112CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4A9DCEAC225DF0F0008112CD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A9DCEAD225DF34D008112CD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4A9DCEAF225DF9E1008112CD /* AMProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMProfileController.swift; sourceTree = "<group>"; };
+		4A9DCEB1225DF9F3008112CD /* AMPlantingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMPlantingController.swift; sourceTree = "<group>"; };
+		4A9DCEB3225DFA03008112CD /* AMShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMShopController.swift; sourceTree = "<group>"; };
+		4A9DCEB5225DFA14008112CD /* AMBeautyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMBeautyController.swift; sourceTree = "<group>"; };
 		B00C1C28BA18C1F307AB3CD5 /* Pods_AMSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D0B6B3DDCD92F317D27666 /* Pods-AMSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSwift.debug.xcconfig"; path = "Target Support Files/Pods-AMSwift/Pods-AMSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +142,7 @@
 		4A9DCE90225DE56C008112CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4A9DCEB1225DF9F3008112CD /* AMPlantingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 		4A9DCE94225DE56C008112CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4A9DCEB5225DFA14008112CD /* AMBeautyController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +238,7 @@
 		4A9DCE9C225DE56C008112CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4A9DCEB3225DFA03008112CD /* AMShopController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +270,7 @@
 		4A9DCEA0225DE56C008112CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4A9DCEAF225DF9E1008112CD /* AMProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,10 +432,14 @@
 				4A9DCE89225DE1FC008112CD /* ViewController.swift in Sources */,
 				4A9DCE8B225DE1FC008112CD /* AMTabBarController.swift in Sources */,
 				4A9DCEAE225DF34D008112CD /* Constant.swift in Sources */,
+				4A9DCEB0225DF9E1008112CD /* AMProfileController.swift in Sources */,
 				4A9DCE8C225DE1FC008112CD /* AMNavigationController.swift in Sources */,
 				4A9DCE87225DE1FC008112CD /* AppDelegate.swift in Sources */,
+				4A9DCEB4225DFA03008112CD /* AMShopController.swift in Sources */,
 				4A9DCEA4225DE5AA008112CD /* AMBaseController.swift in Sources */,
+				4A9DCEB2225DF9F3008112CD /* AMPlantingController.swift in Sources */,
 				4A9DCE8A225DE1FC008112CD /* HomeViewController.swift in Sources */,
+				4A9DCEB6225DFA14008112CD /* AMBeautyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

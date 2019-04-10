@@ -15,4 +15,8 @@ class AMHomeController: AMBaseController {
         
     }
     
+    
+    override func setupView() {
+        self.view.backgroundColor = UIColor.green
+    }
 }

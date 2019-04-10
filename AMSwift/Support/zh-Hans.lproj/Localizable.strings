@@ -10,3 +10,19 @@
 
 /** Home **/
 "AM_Home_title"="首页";
+
+
+/** Planting **/
+"AM_Planting_title"="种草";
+
+
+/** Beauty **/
+"AM_Beauty_title"="美容";
+
+
+/** Shop **/
+"AM_Shop_title"="购物车";
+
+
+/** Profile **/
+"AM_Profile_title"="我的";
