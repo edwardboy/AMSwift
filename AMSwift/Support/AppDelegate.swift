@@ -18,15 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         #if DEBUG
-        installInjection()
+//        installInjection()
+        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
         #endif
         
         return true
     }
     
     func installInjection(){
-        let isFlag = Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
-        print("isFlag:\(isFlag)")
+        
+        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
+        //for tvOS:
+//        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/tvOSInjection.bundle")?.load()
+        //Or for macOS:
+//        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/macOSInjection.bundle")?.load()
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

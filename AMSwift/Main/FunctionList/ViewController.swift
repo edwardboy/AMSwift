@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     
     func testDefer(){
         
+        let f : Float = 0
         
         let fridgeIsOpen = fridgeContains("banana")
         print("fridgeIsOpen:\(fridgeIsOpen)")
