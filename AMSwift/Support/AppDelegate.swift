@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         #if DEBUG
         installInjection()
         #endif
@@ -24,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func installInjection(){
-        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
+        let isFlag = Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
+        print("isFlag:\(isFlag)")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

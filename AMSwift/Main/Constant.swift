@@ -27,11 +27,13 @@ let kSafeAreaBottom = isiPhoneX ? 34.0 : 0
 
 let kiOS7 = Double(UIDevice().systemVersion)! >= 7.0 && Double(UIDevice().systemVersion)! < 8.0 ? true : false
 
-
-
+/* 主色调 */
+let kThemeColor = UIColor.hexadecimalColor(hexadecimal: "0x8c8c8c")
+let kNormalColor = UIColor.hexadecimalColor(hexadecimal: "0xff0d86")
 
 /* 二、宏定义（有参数） */
 // 本地化
 func AMLocalized(string:String) -> String {
     return NSLocalizedString(string, comment: string)
 }
+
