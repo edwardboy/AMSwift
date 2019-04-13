@@ -4,7 +4,7 @@
 //
 //  Created by gyh on 2019/4/10.
 //  Copyright © 2019 gyh. All rights reserved.
-//
+// 宏定义文件
 
 import UIKit
 
