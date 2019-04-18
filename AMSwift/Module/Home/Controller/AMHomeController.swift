@@ -9,14 +9,20 @@
 import UIKit
 
 class AMHomeController: AMBaseController {
+    
+    /** 导航栏 */
+    let navigationBar = UIView()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    
+    /** 设置界面 */
     override func setupView() {
         self.view.backgroundColor = UIColor.green
+        
+        
     }
 }

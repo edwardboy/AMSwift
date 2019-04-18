@@ -42,7 +42,6 @@ class ViewController: UIViewController {
     
     func testDefer(){
         
-        
         let fridgeIsOpen = fridgeContains("banana")
         print("fridgeIsOpen:\(fridgeIsOpen)")
         
