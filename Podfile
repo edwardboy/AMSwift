@@ -1,7 +1,7 @@
 platform :ios, ‘9.0’
 use_frameworks!
 target 'AMSwift' do
-
+  
     pod 'SnapKit', '~> 4.2.0' # 界面布局
     
     pod 'RxSwift', '~> 4.5.0' # 响应式编程

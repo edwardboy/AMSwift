@@ -16,15 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         #if DEBUG
-        installInjection()
+//        installInjection()
+        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
         #endif
         
         return true
     }
     
     func installInjection(){
+        
         Bundle(path: "/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle")?.load()
+        //for tvOS:
+//        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/tvOSInjection.bundle")?.load()
+        //Or for macOS:
+//        Bundle(path: "/Applications/InjectionX.app/Contents/Resources/macOSInjection.bundle")?.load()
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
