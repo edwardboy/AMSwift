@@ -91,6 +91,13 @@
 			path = AMSwift;
 			sourceTree = "<group>";
 		};
+		4A24606A2269C6B7005C93A4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		4A9DCE73225DE1FC008112CD /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +126,7 @@
 		4A9DCE7F225DE1FC008112CD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4A24606A2269C6B7005C93A4 /* Category */,
 				4A9F67F0225F1F1900BF3F2A /* AMMain */,
 				4A9F67EB225F1EED00BF3F2A /* FunctionList */,
 			);
@@ -425,6 +433,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AMSwift/Pods-AMSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -435,6 +444,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",

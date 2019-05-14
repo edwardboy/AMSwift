@@ -8,6 +8,7 @@ target 'AMSwift' do
     
     pod 'Moya', '~> 13.0.0-beta.1'  # 网络请求(Alamofire 4.8.2、Moya、Result 4.1.0)
     
+    pod 'CircleMenu', '~> 4.1.0'  # 圆形菜单
 
 end
 
